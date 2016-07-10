@@ -20,11 +20,11 @@ long frame_time=300;
 #define maxhexelname 4
 
 String nameHexel[maxhexelname+1] = {
-  "Robot1.csv",
-  "Robot2.csv",
-  "Spiral.csv",
-  "Robot4.csv",
-  "ramskull.csv"
+  "Hexel1.csv",
+  "Hexel2.csv",
+  "Hexel3.csv",
+  "Hexel4.csv",
+  "Hexel5.csv"
 };
 tfthexel tftHexel = tfthexel();
 
