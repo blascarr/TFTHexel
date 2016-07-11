@@ -50,6 +50,10 @@
     tfthexel::setRotation(1);
   }
 
+  void tfthexel::setcolumn (int ncolumns){
+    tfthexel::column = ncolumns;
+  }
+
   void tfthexel::drawhexel(int8_t col,int8_t row, uint16_t color ){
     float w = tfthexel::width()/tfthexel::column;
     float h = w*sqrt(4/3);
