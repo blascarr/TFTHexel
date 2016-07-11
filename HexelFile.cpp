@@ -67,7 +67,7 @@ hexel hexelfile::readln(){
         caracter = hexelfile::_file.read();
         hexelfile::pos++;
       } while (!hexelfile::isCRLF(caracter));
-      Serial.println("Salto para alante");
+      //Serial.println("Salto para alante");
       hexelfile::_file.read();
       hexelfile::_nline++;
       return h;

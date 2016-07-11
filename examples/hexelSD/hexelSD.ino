@@ -1,4 +1,4 @@
-
+#include <Adafruit_ST7735.h>
 #include <Adafruit_GFX.h>
 #include <HexelFile.h>
 #include <TFTHexel.h>
@@ -24,17 +24,16 @@ String nameHexel[maxhexelname+1] = {
   "Hexel2.csv",
   "Hexel3.csv",
   "Hexel4.csv",
-  "Hexel5.csv"
 };
 tfthexel tftHexel = tfthexel();
 
 hexel  line;
 void setup() {
-  tftHexel.initR(0x00); 
+  tftHexel.initR(INITR_GREENTAB); 
   tftHexel.fillScreen(0x000000);
   tftHexel.initEsplora();
   tftHexel.setRotation(0);
-  //tftHexel.grid_c(10);
+
 
   tftHexel.print("Initializing SD");
 
@@ -79,12 +78,17 @@ void loop() {
         tftHexel.setCursor(0, 45);
         tftHexel.println(filehex.getFilename());
       }
-      tftHexel.setCursor(0, 60);
+
       tftHexel.fillScreen(ST7735_WHITE);
       line = filehex.readln();
-      line= filehex.readln();
-      line= filehex.readln();
-      line= filehex.readln();
+      line = filehex.readln();
+      line = filehex.readln();
+
+      int col = line.column;
+      int row = line.row;
+      tftHexel.setcolumn(line.column/3);
+      
+      line = filehex.readln();
       while (filehex._file.available() > 1) {
         line= filehex.readln();
         //Serial.println(line.column);
@@ -93,7 +97,7 @@ void loop() {
         //Serial.println(line.G);
         //Serial.println(line.B);
         if (line.A>0){
-          tftHexel.drawhexel(line.column,line.row,line.color);
+          tftHexel.drawhexel(line.column,line.row, tftHexel.Color565(  line.B,line.G, line.R));
         }
         
       };
