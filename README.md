@@ -29,17 +29,23 @@ Arduino Board read image information from SD card with a <a href="examples/hexel
 Hexel grid class is based on geometric triangles ordered in columns and rows with the following structure: 
 
 <p align="center">
-  <img  src="img/HexelGridPoints.jpg" width="200"/>
-  <img  src="img/Hexel4Grid.jpg" width="200"/>
-  <img  src="img/Hexel4Grid_Xtended.jpg" width="200"/>
+  <img  src="img/HexelGridPoints.jpg" width="250"/>
+  <img  src="img/Hexel4Grid.jpg" width="250"/>
+  <img  src="img/Hexel4Grid_Xtended.jpg" width="250"/>
 </p>
 
 <p align="center">
-  <img  src="img/Hexel4Grid_module.jpg" width="200"/>
-  <img  src="img/Hexel4Grid_Sectors.jpg" width="200"/>
-  <img  src="img/Hexel4Grid_triangles.jpg" width="200"/>
+  <img  src="img/Hexel4Grid_module.jpg" width="250"/>
+  <img  src="img/Hexel4Grid_Sectors.jpg" width="250"/>
+  <img  src="img/Hexel4Grid_triangles.jpg" width="250"/>
 </p>
 
 ![Temple Aqualung](img/Temple_Aqualung.png)
+
+<p align="center">
+  <img  src="img/Earth.png" width="250"/>
+  <img  src="img/DinoHexel.png" width="250"/>
+  <img  src="img/LagoonCastle.png" width="250"/>
+</p>
 
 This library has been tested with Arduino Esplora and a TFT display.
