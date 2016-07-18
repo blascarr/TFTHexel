@@ -11,13 +11,13 @@
 #define TFT_DC   0  // Data/command line for TFT
 #define TFT_RST  1  // Reset line for TFT (or connect to +5V)
 
-int hexelcount = 0;
+int hexelcount = 1;
 int previousBtn = 0;
 //Non Blocking graphics
 long previousMillis = 0;  //Reference Millis
 long frame_time=300;  
 
-#define maxhexelname 4
+#define maxhexelname 3
 
 String nameHexel[maxhexelname+1] = {
   "Hexel1.csv",
@@ -72,6 +72,7 @@ void loop() {
       if (!filehex.open()) {
         tftHexel.setCursor(0, 30);
         tftHexel.print("File not readed: ");
+        delay(5000);
       } else {
         tftHexel.setCursor(0, 30);
         tftHexel.println("File readed: ");
