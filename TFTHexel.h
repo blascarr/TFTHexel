@@ -62,7 +62,8 @@
     vector3 center;
     Matrix origin;
     bool border;
-    
+    int column=14;
+    int rows=14;
     private:
     //uint8_t  _cs, _rs, _sid, _sclk;
   };
