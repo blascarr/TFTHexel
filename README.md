@@ -52,8 +52,11 @@ This library has been tested with Arduino Esplora and a TFT display.
 
 <p>
 #define SD_CS    8  // Chip select line for SD card
+<br>
 #define TFT_CS  7  // Chip select line for TFT display
+<br>
 #define TFT_DC   0  // Data/command line for TFT
+<br>
 #define TFT_RST  1  // Reset line for TFT (or connect to +5V)
 </p>
 
