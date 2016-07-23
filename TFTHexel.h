@@ -48,8 +48,6 @@
     };
 
     public:
-      
-    int column=14;
 
     tfthexel();
     void init();
