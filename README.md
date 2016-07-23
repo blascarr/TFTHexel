@@ -50,10 +50,13 @@ Hexel grid class is based on geometric triangles ordered in columns and rows wit
 
 This library has been tested with Arduino Esplora and a TFT display. 
 
+<p>
 #define SD_CS    8  // Chip select line for SD card
 #define TFT_CS  7  // Chip select line for TFT display
 #define TFT_DC   0  // Data/command line for TFT
 #define TFT_RST  1  // Reset line for TFT (or connect to +5V)
+</p>
+
 
 If you use another board, you can change your pins in <b>config.h</b>.
 
