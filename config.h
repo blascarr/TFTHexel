@@ -21,6 +21,6 @@
 */
 
 #define mosi 16
-#define cs   7
-#define rs   0
-#define rst  1
+#define TFT_CS    7
+#define TFT_DC   0
+#define TFT_RST  1

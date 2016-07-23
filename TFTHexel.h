@@ -52,10 +52,8 @@
     int column=14;
 
     tfthexel();
-    //hexel(int8_t CS, int8_t RS, int8_t RST = -1);
     void initEsplora();
     void drawhexel(int8_t col,int8_t row, uint16_t color = ST7735_BLACK);
-    //void grid_c(int8_t col = 10);
     void grid_c(int8_t col, uint16_t color = ST7735_BLACK);
     void hexelgrid(int8_t col,int8_t row, uint16_t color = ST7735_BLACK);
     void setcolumn (int ncolumns);

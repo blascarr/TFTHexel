@@ -31,11 +31,11 @@
 /*--------------------------------- tftHexel  --------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
   tfthexel::tfthexel()
-    : Adafruit_ST7735( cs, rs, rst) {
+    : Adafruit_ST7735( TFT_CS, TFT_DC, TFT_RST) {
 
-      /*_cs   = cs;
-      _rs   = rs;
-      _rst  = rst;
+      /*_cs   = TFT_CS;
+      _rs   = TFT_DC;
+      _rst  = TFT_RST;
       hwSPI = true;
       _sid  = _sclk = 0;*/
   }
