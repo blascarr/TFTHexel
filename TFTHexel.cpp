@@ -40,7 +40,7 @@
       _sid  = _sclk = 0;*/
   }
 
-  void tfthexel::initEsplora(){
+  void tfthexel::init(){
     Serial.begin(9600);
     Serial.println("TFTHexel");
     tfthexel::setRotation(1);

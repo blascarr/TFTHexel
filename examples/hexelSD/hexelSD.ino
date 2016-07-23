@@ -31,7 +31,7 @@ hexel  line;
 void setup() {
   tftHexel.initR(INITR_GREENTAB); 
   tftHexel.fillScreen(0x000000);
-  tftHexel.initEsplora();
+  tftHexel.init();
   tftHexel.setRotation(0);
 
 
