@@ -63,4 +63,4 @@ This library has been tested with Arduino Esplora and a TFT display.
 
 If you use another board, you can change your pins in <b>config.h</b>.
 
-![Creatice Commons Licence](img/icon_cc.png)
+![Creative Commons Licence](img/icon_cc.png)
